@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
-import taskReducer from './taskReducer.ts';
+import Reducer from './Reducer.ts';
 
-const store = createStore(taskReducer);
+const store = createStore(Reducer);
 
 export default store;

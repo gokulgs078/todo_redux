@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import ToDo from './ToDo.tsx';
-import { Task } from '../redux/taskReducer.ts';
+import { Task } from '../redux/Reducer.ts';
 
 const ToDoList: React.FC = () => {
   const tasks = useSelector((state: { tasks: Task[] }) => state.tasks);

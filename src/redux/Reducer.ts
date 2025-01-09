@@ -37,7 +37,7 @@ interface ToggleTaskAction {
 
 type TaskActions = AddTaskAction | DeleteTaskAction | EditTaskAction | ToggleTaskAction;
 
-const taskReducer = (state = initialState, action: TaskActions) => {
+const Reducer = (state = initialState, action: TaskActions) => {
   let updatedTasks;
 
   switch (action.type) {
@@ -82,4 +82,4 @@ const taskReducer = (state = initialState, action: TaskActions) => {
   }
 };
 
-export default taskReducer;
+export default Reducer;
