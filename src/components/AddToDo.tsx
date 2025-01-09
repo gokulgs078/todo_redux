@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTask } from '../redux/actions.ts';
 
-const AddTask: React.FC = () => {
+const AddToDo: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const dispatch = useDispatch();
 
@@ -36,4 +36,4 @@ const AddTask: React.FC = () => {
   );
 };
 
-export default AddTask;
+export default AddToDo;

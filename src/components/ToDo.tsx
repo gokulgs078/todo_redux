@@ -2,13 +2,13 @@ import React, { useState, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { deleteTask, editTask, toggleTask } from '../redux/actions.ts';
 
-interface TaskItemProps {
+interface ToDoProps {
   id: number;
   text: string;
   completed: boolean;
 }
 
-const TaskItem: React.FC<TaskItemProps> = ({ id, text, completed }) => {
+const ToDo: React.FC<ToDoProps> = ({ id, text, completed }) => {
   const dispatch = useDispatch();
   const [isEditing, setIsEditing] = useState(false);
   
@@ -69,4 +69,4 @@ const TaskItem: React.FC<TaskItemProps> = ({ id, text, completed }) => {
   );
 };
 
-export default TaskItem;
+export default ToDo;
